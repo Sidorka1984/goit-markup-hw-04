@@ -153,14 +153,15 @@ img {
   flex-direction: column;
   align-items: center;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
-  background-image: url("../images/hero/people-bg.jpg")
-  backgroud-repeat: no-repeat;
+  padding-top: 200px;
   min-width: 696px;
   min-height: 120px;
   letter-spacing: 0.06em;
@@ -168,12 +169,12 @@ img {
 
 .hero {
   max-width: 1600px;
+  height: 600px;
   background-color: var(--secondary-background-color);
+  background-image: url("../images/hero/people-bg.jpg");
+  backgroud-repeat: no-repeat;
+  background-size: 1600px 600px;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .hero-button {
   display: flex;
