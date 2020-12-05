@@ -159,10 +159,13 @@ img {
   line-height: 1.363;
   text-transform: uppercase;
   color: #ffffff;
+  background-image: url("../images/hero/people-bg.jpg")
+  backgroud-repeat: no-repeat;
   min-width: 696px;
   min-height: 120px;
   letter-spacing: 0.06em;
 }
+
 .hero {
   max-width: 1600px;
   background-color: var(--secondary-background-color);
