@@ -265,6 +265,22 @@ img {
   width: 270px;
   height: 75px;
 }
+.about-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.about-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
 /*===================end это мы=============*/
 /*===================Чем мы занимаемся=============*/
 .gallery .container {
@@ -309,7 +325,7 @@ img {
   margin-right: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap)); */
 }
-.teams .container {
+.teams {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -333,13 +349,51 @@ img {
   line-height: 1.188;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 16px;
 }
 .persons-job {
   font-weight: 400;
   color: var(--secondary-text-color);
   margin-top: 10px;
 }
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--primary-background-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
 /*=================== end команда ================*/
+/* ==========Постоянные клиенты=============== */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  height: 90px;
+}
 /*=================footer dark================*/
 .dark .container {
   background-color: var(--secondary-background-color);
