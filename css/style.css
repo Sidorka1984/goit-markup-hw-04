@@ -14,6 +14,8 @@ body {
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .list {
@@ -163,6 +165,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  padding-top: 200px;
 }
 
 .hero-title {
@@ -172,7 +175,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  padding-top: 200px;
+
   min-width: 696px;
   min-height: 120px;
   letter-spacing: 0.06em;
@@ -201,7 +204,7 @@ img {
 /*===================end hero==============*/
 
 /*===================это мы==============*/
-.about {
+.about .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -248,7 +251,7 @@ img {
 }
 /*===================end это мы=============*/
 /*===================Чем мы занимаемся=============*/
-.gallery {
+.gallery .container {
   padding-bottom: 94px;
 }
 .gallery-list {
@@ -274,9 +277,6 @@ img {
 
 /*=================== end Чем мы занимаемся=============*/
 /*===================команда ================*/
-.portfolio .container {
-  box-sizing: border-box;
-}
 
 .teams-list {
   display: flex;
@@ -293,7 +293,7 @@ img {
   margin-right: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap)); */
 }
-.teams {
+.teams .container {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -325,7 +325,7 @@ img {
 }
 /*=================== end команда ================*/
 /*=================footer dark================*/
-.dark {
+.dark .container {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
