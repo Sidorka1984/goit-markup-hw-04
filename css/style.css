@@ -335,7 +335,8 @@ img {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
@@ -388,6 +389,7 @@ img {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  box-sizing: border-box;
 }
 .clients-list-item {
   display: flex;
@@ -401,24 +403,30 @@ img {
 }
 .clients-list {
   display: flex;
-  align-items: center;
 }
 .clients-list-item:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
-.clients-link:hover .client-icon,
-.clients-link:focus .client-icon {
-  fill: var(--primary-background-color);
+.clients-link {
+  fill: #afb1b8;
+}
+.clients-list-item:hover .client-icon,
+.clients-list-item:focus .client-icon {
+  fill: var(--accent-color);
 }
 .clients-list-item:hover,
 .clients-list-item:focus {
-  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 /*=================footer dark================*/
 .dark .container {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+}
+.footer-address-container {
+  margin-right: 70px;
 }
 .address-position,
 .footer-mail,
@@ -440,8 +448,31 @@ img {
 .address-position {
   margin-bottom: 9px;
 }
+.join {
+  font-family: var(--main-font);
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  margin-bottom: 20px;
+}
 .footer-mail-tel:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-list-item > .social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-list-item > .social-list-icon {
+  fill: #ffffff;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
 }
 /*=================end footer dark================*/
 /* ================portfolio===============*/
