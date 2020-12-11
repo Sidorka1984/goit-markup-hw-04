@@ -174,21 +174,20 @@ img {
 /*===================end header==============*/
 /*===================hero==============*/
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1600px;
-  height: 600px;
+  min-height: 600px;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: var(--secondary-background-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero/people-bg.jpg");
+
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding-top: 200px;
 }
 
 .hero-title {
@@ -398,6 +397,7 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
+  outline: none;
 }
 /*=================== end команда ================*/
 /* ==========Постоянные клиенты=============== */
@@ -425,7 +425,6 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .clients-link {
   fill: var(--icon-color);
 }
-
 .clients-list-item:hover .client-icon,
 .clients-list-item:focus .client-icon {
   fill: var(--accent-color);
@@ -433,7 +432,10 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .clients-list-item:hover,
 .clients-list-item:focus {
   border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+  outline: none;
 }
+
 /*=================footer dark================*/
 .dark > .container {
   display: flex;
@@ -502,10 +504,14 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .dark .social-list-icon {
   fill: var(--accent-icon-color);
 }
+
 .dark-list-link:hover,
-.dark-list-linkk:focus {
+.dark-list-link:focus {
   background-color: var(--accent-color);
+  fill: #ffffff;
+  outline: none;
 }
+
 /*=================end footer dark================*/
 /* ================portfolio===============*/
 
