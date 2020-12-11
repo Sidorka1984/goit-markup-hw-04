@@ -432,7 +432,6 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .clients-list-item:hover,
 .clients-list-item:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
   outline: none;
 }
 
