@@ -425,16 +425,18 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .clients-link {
   fill: var(--icon-color);
 }
-.clients-list-item:hover .client-icon,
-.clients-list-item:focus .client-icon {
+.clients-list-item:hover .client-icon {
   fill: var(--accent-color);
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
+.clients-list-item:hover {
   border: 1px solid var(--accent-color);
-  outline: none;
 }
-
+.clients-link:focus {
+  fill: var(--accent-color);
+}
+.clients-list .list:focus {
+  border: 1px solid #000000;
+}
 /*=================footer dark================*/
 .dark > .container {
   display: flex;
