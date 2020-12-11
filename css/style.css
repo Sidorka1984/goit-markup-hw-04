@@ -435,7 +435,7 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
 .clients-link:focus {
   fill: var(--accent-color);
-  outline: 1px solid #000000;
+  border: 1px solid #000000;
 }
 
 /*=================footer dark================*/
