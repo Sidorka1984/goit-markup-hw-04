@@ -28,7 +28,6 @@ body {
 
 .link {
   text-decoration: none;
-  outline: none;
 }
 
 h1,
@@ -397,7 +396,6 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
-  outline: none;
 }
 /*=================== end команда ================*/
 /* ==========Постоянные клиенты=============== */
@@ -435,7 +433,7 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
 .clients-link:focus {
   fill: var(--accent-color);
-  bo: 1px solid #000000;
+  border: 1px solid #000000;
 }
 
 /*=================footer dark================*/
@@ -511,7 +509,6 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 .dark-list-link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
-  outline: none;
 }
 
 /*=================end footer dark================*/
